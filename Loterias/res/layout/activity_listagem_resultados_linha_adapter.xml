@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	    
+	<TableLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+	    <TableRow
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+
+    		<TextView
+    		    android:layout_width="80sp"
+    		    android:layout_height="wrap_content"
+    		    android:paddingLeft="5dip"
+    		    android:text="Concurso"
+    		    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    		<TextView
+    		    android:layout_width="90sp"
+    		    android:layout_height="wrap_content"
+    		    android:paddingLeft="5dip"
+    		    android:text="Data"
+    		    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    	</TableRow>	
+	</TableLayout>
+
+	<TableLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+	    <TableRow
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+    	   <TextView
+    	       android:id="@+id/loterial_numeroconcurso"
+    	       android:layout_width="80sp"
+    	       android:layout_height="wrap_content"
+    	       android:paddingLeft="5dip"
+    	       android:textAppearance="?android:attr/textAppearanceSmall"
+    	       android:textStyle="bold" />
+
+    	   <TextView
+    	       android:id="@+id/loterial_dataconcurso"
+    	       android:layout_width="90sp"
+    	       android:layout_height="wrap_content"
+    	       android:paddingLeft="5dip"
+    	       android:textAppearance="?android:attr/textAppearanceSmall"
+    	       android:textStyle="bold" />
+
+    	</TableRow>	
+	</TableLayout>
+    	   
+	<TableLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+    	android:layout_gravity="center">
+	    
+	    <TableRow
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent" >
+    	   
+    		<TextView
+    		    android:layout_width="match_parent"
+    		    android:layout_height="wrap_content"
+    		    android:paddingLeft="5dip"
+    		    android:text="Dezenas Sorteadas"
+    		    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    	</TableRow>	
+	</TableLayout>
+    			   	   
+	<TableLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+
+	    <TableRow
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:paddingLeft="5dip" >
+
+	    	<TextView
+	    	    android:id="@+id/loterial_d1"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_gravity="center"
+	    	    android:paddingRight="10dip"
+	    	    android:textAppearance="?android:attr/textAppearanceSmall"
+	    	    android:textSize="20dip"
+	    	    android:textStyle="bold" />
+
+    	   <TextView
+    	       android:id="@+id/loterial_d2"
+    	       android:layout_width="wrap_content"
+    	       android:layout_height="wrap_content"
+    	       android:layout_gravity="center"
+    	       android:paddingRight="10dip"
+    	       android:textAppearance="?android:attr/textAppearanceSmall"
+    	       android:textSize="20dip"
+    	       android:textStyle="bold" />
+
+    	   <TextView
+    	       android:id="@+id/loterial_d3"
+    	       android:layout_width="wrap_content"
+    	       android:layout_height="wrap_content"
+    	       android:layout_gravity="center"
+    	       android:paddingRight="10dip"
+    	       android:textAppearance="?android:attr/textAppearanceSmall"
+    	       android:textSize="20dip"
+    	       android:textStyle="bold" />
+
+    	   <TextView
+    	       android:id="@+id/loterial_d4"
+    	       android:layout_width="wrap_content"
+    	       android:layout_height="wrap_content"
+    	       android:layout_gravity="center"
+    	       android:paddingRight="10dip"
+    	       android:textAppearance="?android:attr/textAppearanceSmall"
+    	       android:textSize="20dip"
+    	       android:textStyle="bold" />
+
+    	   <TextView
+    	       android:id="@+id/loterial_d5"
+    	       android:layout_width="wrap_content"
+    	       android:layout_height="wrap_content"
+    	       android:layout_gravity="center"
+    	       android:paddingRight="10dip"
+    	       android:textAppearance="?android:attr/textAppearanceSmall"
+    	       android:textSize="20dip"
+    	       android:textStyle="bold" />
+
+    	   <TextView
+    	       android:id="@+id/loterial_d6"
+    	       android:layout_width="wrap_content"
+    	       android:layout_height="wrap_content"
+    	       android:layout_gravity="center"
+    	       android:paddingRight="10dip"
+    	       android:textAppearance="?android:attr/textAppearanceSmall"
+    	       android:textSize="20dip"
+    	       android:textStyle="bold" />
+
+    	   <TextView
+    	       android:id="@+id/loterial_d7"
+    	       android:layout_width="wrap_content"
+    	       android:layout_height="wrap_content"
+    	       android:layout_gravity="center"
+    	       android:paddingRight="10dip"
+    	       android:textAppearance="?android:attr/textAppearanceSmall"
+    	       android:textSize="20dip"
+    	       android:textStyle="bold" />
+    	   <TextView
+    	       android:id="@+id/loterial_d8"
+    	       android:layout_width="wrap_content"
+    	       android:layout_height="wrap_content"
+    	       android:layout_gravity="center"
+    	       android:paddingRight="10dip"
+    	       android:textAppearance="?android:attr/textAppearanceSmall"
+    	       android:textSize="20dip"
+    	       android:textStyle="bold" />
+			<TextView
+    	       android:id="@+id/loterial_d9"
+    	       android:layout_width="wrap_content"
+    	       android:layout_height="wrap_content"
+    	       android:layout_gravity="center"
+    	       android:paddingRight="10dip"
+    	       android:textAppearance="?android:attr/textAppearanceSmall"
+    	       android:textSize="20dip"
+    	       android:textStyle="bold" />
+    	    <TextView
+    	       android:id="@+id/loterial_d10"
+    	       android:layout_width="wrap_content"
+    	       android:layout_height="wrap_content"
+    	       android:layout_gravity="center"
+    	       android:paddingRight="10dip"
+    	       android:textAppearance="?android:attr/textAppearanceSmall"
+    	       android:textSize="20dip"
+    	       android:textStyle="bold" />
+    	   <TextView
+    	       android:id="@+id/loterial_d11"
+    	       android:layout_width="wrap_content"
+    	       android:layout_height="wrap_content"
+    	       android:layout_gravity="center"
+    	       android:paddingRight="10dip"
+    	       android:textAppearance="?android:attr/textAppearanceSmall"
+    	       android:textSize="20dip"
+    	       android:textStyle="bold" />
+    	   <TextView
+    	       android:id="@+id/loterial_d12"
+    	       android:layout_width="wrap_content"
+    	       android:layout_height="wrap_content"
+    	       android:layout_gravity="center"
+    	       android:paddingRight="10dip"
+    	       android:textAppearance="?android:attr/textAppearanceSmall"
+    	       android:textSize="20dip"
+    	       android:textStyle="bold" />
+    	   <TextView
+    	       android:id="@+id/loterial_d13"
+    	       android:layout_width="wrap_content"
+    	       android:layout_height="wrap_content"
+    	       android:layout_gravity="center"
+    	       android:paddingRight="10dip"
+    	       android:textAppearance="?android:attr/textAppearanceSmall"
+    	       android:textSize="20dip"
+    	       android:textStyle="bold" />
+    	   <TextView
+    	       android:id="@+id/loterial_d14"
+    	       android:layout_width="wrap_content"
+    	       android:layout_height="wrap_content"
+    	       android:layout_gravity="center"
+    	       android:paddingRight="10dip"
+    	       android:textAppearance="?android:attr/textAppearanceSmall"
+    	       android:textSize="20dip"
+    	       android:textStyle="bold" />
+    	   <TextView
+    	       android:id="@+id/loterial_d15"
+    	       android:layout_width="wrap_content"
+    	       android:layout_height="wrap_content"
+    	       android:layout_gravity="center"
+    	       android:paddingRight="10dip"
+    	       android:textAppearance="?android:attr/textAppearanceSmall"
+    	       android:textSize="20dip"
+    	       android:textStyle="bold" />
+    	   	   	   	   	    	       	   	   		
+		</TableRow>
+    </TableLayout>		
+</LinearLayout>

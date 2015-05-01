@@ -1,0 +1,140 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.daciosoftware.loterias"
+    android:versionCode="1"
+    android:versionName="1.1.1" >
+
+    <uses-sdk android:minSdkVersion="8"	/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    
+	<application
+        android:icon="@drawable/icon_main"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Loterias"
+            android:label="@string/title_activity_main" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        <activity
+            android:name=".MegasenaMenu"
+            android:label="@string/title_activity_megasena" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".QuinaMenu"
+            android:label="@string/title_activity_quina" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".LotofacilMenu"
+            android:label="@string/title_activity_lotofacil" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name=".MegasenaDezenasMaisSorteadas"
+            android:label="@string/title_activity_dezenas_mais_sorteadas"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".MegasenaListagemResultados"
+            android:label="@string/title_activity_listagem_resultados" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name=".MegasenaCarregarArquivo"
+            android:label="@string/title_activity_carregar_arquivo" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+        
+        <activity
+            android:name=".MegasenaEditarResultado"
+            android:label="@string/title_activity_editar_resultado" >
+        </activity>
+
+        <activity
+            android:name=".MegasenaGerarJogos"
+            android:label="@string/title_activity_gerar_jogos"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".QuinaCarregarArquivo"
+            android:label="@string/title_activity_carregar_arquivo"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".QuinaListagemResultados"
+            android:label="@string/title_activity_listagem_resultados"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".QuinaEditarResultado"
+            android:label="@string/title_activity_listagem_resultados"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".QuinaDezenasMaisSorteadas"
+            android:label="@string/title_activity_dezenas_mais_sorteadas"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".QuinaGerarJogos"
+            android:label="@string/title_activity_gerar_jogos"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        
+        <activity
+            android:name=".LotofacilCarregarArquivo"
+            android:label="@string/title_activity_carregar_arquivo"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".LotofacilListagemResultados"
+            android:label="@string/title_activity_listagem_resultados"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LotofacilEditarResultado"
+            android:label="@string/title_activity_listagem_resultados"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".LotofacilDezenasMaisSorteadas"
+            android:label="@string/title_activity_dezenas_mais_sorteadas"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".LotofacilGerarJogos"
+            android:label="@string/title_activity_gerar_jogos"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".FileDialog"
+            android:label="@string/title_file_dialog"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        
+	</application>
+
+</manifest>

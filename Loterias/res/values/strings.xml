@@ -1,0 +1,99 @@
+<resources>
+	<string name="app_name">Loterias-DMS</string>
+    <string name="title_activity_main">Loterias-Dezenas Mais Sorteadas</string>
+    <string name="title_activity_megasena">Mega-Sena</string>
+    <string name="title_activity_lotofacil">Lotofácil</string>
+    <string name="title_activity_quina">Quina</string>
+    <string name="title_activity_editar_resultado">Inserir/Editar Resultado</string>
+    <string name="title_activity_dezenas_mais_sorteadas">Dezenas Mais Sorteadas</string>
+    <string name="title_activity_carregar_arquivo">Carregar Arquivo de Resultados</string>
+    <string name="title_activity_listagem_resultados">Resultados</string>
+    <string name="title_activity_gerar_jogos">Gerar Jogos</string>
+    
+    <string name="nnew">Novo</string>
+    <string name="select">OK</string>
+    <string name="file_name">Nome do Arquivo</string>
+    <string name="cancel">Cancelar</string>
+    <string name="create">Criar</string>
+    <string name="no_data">Sem dados</string>
+    <string name="fd_path">Pasta Atual</string>
+    <string name="folder">Pasta</string>
+    <string name="fd_cant_read_folder">Erro ao ler a pasta</string>
+    <string name="title_file_dialog">Selecionar Arquivo/Diretório</string>
+    <string name="fd_error">Erro</string>
+    
+    <string name="megasena">Megasena</string>
+    <string name="lotofacil">Lotofcil</string>
+    <string name="quina">Quina</string>
+    <string name="sair">Sair</string>
+      
+    <string name="btGerarJogos">Gerar Jogos</string>
+	<string name="btListar">Listar</string>
+    <string name="btSalvarJogos">Salvar Jogos</string>
+    <string name="btInserir">Inserir Resultado</string>
+    <string name="btConsultar">Consultar</string>
+    <string name="btExcluir">Excluir</string>
+    <string name="btCancelar">Cancelar</string>
+    <string name="btSalvar">Salvar</string>
+    <string name="btArquivo">Arquivo</string>
+    <string name="btProcessar">Processar</string>
+    
+    <string name="textNumerosSelecionados">Dezenas Selecionados</string>
+    <string name="textJogosPossiveis">Jogos Possíveis</string>
+    <string name="textConsultarResultado">Consultar Resultados</string>
+    <string name="textConsultaDezenas">Dezenas</string><string name="textNumeroConcurso">Nº Concurso</string>
+    <string name="textDataConcurso">Data Concurso</string>
+    <string name="textCarregarArquivo">Arquivo com os Resultado(Tipo HTML)</string>
+    <string name="textPromptQtdeNumeroJogo">Qtde de Dezenas nos Jogos</string>
+    <string name="textObs">Observação</string>
+    <string name="textInstrucoesMS">Faça o download do arquivo(HTML) no site da CAIXA, com todos os resultados da MEGA-SENA, depois processe-o no aplicativo (Menu "Arquivo com resultado").</string>
+    <string name="textInstrucoesQN">Faça o download do arquivo(HTML) no site da CAIXA, com todos os resultados da QUINA, depois processe-o no aplicativo (Menu "Arquivo com resultado").</string>
+    <string name="textInstrucoesLF">Faça o download do arquivo(HTML) no site da CAIXA, com todos os resultados da LOTOFÁCIL, depois processe-o no aplicativo (Menu "Arquivo com resultado").</string>
+    <string name="textInstrucoesMSAr">Faça o download do arquivo(HTML) no site da CAIXA, com todos os resultados da MEGA-SENA, depois processe-o no aplicativo.</string>
+    <string name="textInstrucoesQNAr">Faça o download do arquivo(HTML) no site da CAIXA, com todos os resultados da QUINA, depois processe-o no aplicativo.</string>
+    <string name="textInstrucoesLFAr">Faça o download do arquivo(HTML) no site da CAIXA, com todos os resultados da LOTOFÁCIL, depois processe-o no aplicativo.</string>
+    <string name="textAtencao">Atenção</string>
+    
+    <string-array name="cbxMegasenaQtdeDezenasJogo">
+        <item>6 dezenas por jogo</item>
+        <item>7 dezenas por jogo</item>
+        <item>8 dezenas por jogo</item>
+        <item>9 dezenas por jogo</item>
+        <item>10 dezenas por jogo</item>
+        <item>11 dezenas por jogo</item>
+        <item>12 dezenas por jogo</item>
+        <item>13 dezenas por jogo</item>
+        <item>14 dezenas por jogo</item>
+        <item>15 dezenas por jogo</item>
+    </string-array>
+    
+    <string-array name="cbxQuinaQtdeDezenasJogo">
+        <item>5 dezenas por jogo </item>
+        <item>6 dezenas por jogo</item>
+        <item>7 dezenas por jogo</item>
+        <item>8 dezenas por jogo</item>
+        <item>9 dezenas por jogo</item>
+        <item>10 dezenas por jogo</item>
+        <item>11 dezenas por jogo</item>
+        <item>12 dezenas por jogo </item>
+        <item>13 dezenas por jogo</item>
+        <item>14 dezenas por jogo </item>
+        <item>15 dezenas por jogo</item>
+    </string-array>
+
+    <string-array name="cbxLotofacilQtdeDezenasJogo">
+        <item>15 dezenas por jogo</item>
+    </string-array>
+    
+    <string-array name="cbxConcursosListar">
+        <item>Todos concursos</item>
+        <item>10 últimos concursos</item>
+        <item>20 últimos concursos</item>
+        <item>30 últimos concursos</item>
+        <item>40 últimos concursos</item>
+        <item>50 últimos concursos</item>
+        <item>100 últimos concursos</item>
+    </string-array>
+    
+	
+</resources>
