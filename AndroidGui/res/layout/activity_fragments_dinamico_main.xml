@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/LinearLayout1"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+    	android:id="@+id/linearLayoutFragment"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1"
+    	android:background="@android:color/white"
+    	android:gravity="center_horizontal|center_vertical"
+    	android:orientation="vertical" >
+
+        <TextView
+        	android:id="@+id/textView1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/text_framents_dinanmco_main"
+        	android:textColor="#FF0000"
+        	android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="0"
+    	android:gravity="center_horizontal" >
+
+    	<Button
+    		android:id="@+id/btnIrFragment1"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/text_button_fragment1"
+    		android:onClick="onClickFragmentOne" />
+
+    	<Button
+    		android:id="@+id/btnIrFragment2"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/text_button_fragment2"
+    		android:onClick="onClickFragmentTwo" />
+    </LinearLayout>
+
+</LinearLayout>

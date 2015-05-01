@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">AndroidGui</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="title_activity_cantos_arredondados">CantosArredondados</string>
+	<string name="title_activity_deteccao_gestos">DeteccaoGestos</string>
+	<string name="title_activity_estrelas_rating_bar">EstrelasRatingBar</string>
+	<string name="title_activity_visao_balancar">VisaoBalancar</string>
+	<string name="rate_service">Rate our service:</string>
+	<string name="rate_price">Rate our price:</string>
+	<string name="done">Done</string>
+	<string name="title_activity_map">MapActivity</string>
+	<string name="title_activity_mapa_simples">MapaSimples</string>
+	<string name="textViewLatitude">Latitude:</string>
+	<string name="textViewLongitude">Longitude:</string>
+	<string name="btnOK">OK</string>
+	<string name="title_activity_mapa_simples2">MapaSimples2</string>
+	<string name="title_activity_animacao_rasterizada_simples">Animação Rasterizada Simples</string>
+	<string name="tempo_zero">0 seg.</string>
+	<string name="title_activity_processamento_async_task">ProcessamentoAsyncTask</string>
+	<string name="label_button_processamento1">Processamento Primeiro Plano</string>
+	<string name="label_button_processamento2">Processamento Segundo Plano</string>
+	<string name="label_button_limpar">Limpar Lisagem</string>
+	<string name="title_activity_fragments_propaganda_main">Fragments Propaganda</string>
+	<string name="title_activity_fragments_propaganda_tela2">Fragments Propaganda Tela2</string>
+	<string name="title_activity_fragments_propaganda">Fragments Propaganda</string>
+	<string name="texto_propaganda">Visite o nosso site!</string>
+	<string name="click_aqui_propaganda">Click Aqui</string>
+	<string name="texto_tela1_fragments">Tela 1 Fragments</string>
+	<string name="texto_btn_tela1_fragments">Tela 2 Fragments</string>
+	<string name="texto_tela2_fragments">Tela 2 Fragments</string>
+	<string name="text_label_fragment">Fragment Propaganda</string>
+	<string name="title_activity_fragments_dinamico_main">FragmentsDinamicoMain</string>
+	<string name="text_button_fragment1">Fragment 1</string>
+	<string name="text_button_fragment2">Fragment 2</string>
+	<string name="title_activity_fragments_dinamico_um">Fragments Dinâmico Tela Um</string>
+	<string name="title_activity_fragments_dinamico_dois">Fragments Dinâmico Tela Dois</string>
+	<string name="text_framents_dinanmco_main">Tela inicial</string>
+	<string name="title_activity_action_bar">ActionBarActivity</string>
+	<string name="text_activity_actionbar">Activity com ActionBar</string>
+	<string name="action_search">Pesquisar</string>
+	<string name="action_add">Adicionar</string>
+	<string name="action_calendar">Calendário</string>
+	<string name="action_settings">Configurações</string>
+	<string name="action_about">Sobre</string>
+	<string name="action_version">Versão</string>
+	<string name="title_activity_game_flixel">Game Flixel</string>
+
+</resources>

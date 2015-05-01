@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	xmlns:AndroidGui="http://schemas.android.com/apk/res-auto">
+
+	<item
+		android:id="@+id/action_search"
+		android:icon="@android:drawable/ic_menu_search"
+		android:title="@string/action_search"
+		AndroidGui:showAsAction="ifRoom|collapseActionView"
+		AndroidGui:actionViewClass="android.support.v7.widget.SearchView"/>
+	
+	<item
+		android:id="@+id/action_add"
+		android:icon="@android:drawable/ic_menu_add"
+		android:title="@string/action_add"
+		AndroidGui:showAsAction="ifRoom"/>
+	
+	<item
+		android:id="@+id/action_calendario"
+		android:icon="@android:drawable/ic_menu_my_calendar"
+		android:title="@string/action_calendar"
+		AndroidGui:showAsAction="ifRoom"/>
+	
+	<item
+		android:id="@+id/action_settings"
+		android:title="@string/action_settings"/>
+	
+	<item
+		android:id="@+id/action_about"
+		android:title="@string/action_about"/>
+	
+	<item
+		android:id="@+id/action_version"
+		android:title="@string/action_version"/>		
+				
+
+</menu>
