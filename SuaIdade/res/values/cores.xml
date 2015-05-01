@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="text_button">#FFFFFF</color>
+	<color name="azul_claro">#6699FF</color>
+    <color name="azul">#0000FF</color>
+    <color name="amarelo_claro">#FFFF33</color>
+    <color name="amarelo">#FFCC00</color>
+    <color name="vermelho">#FF0000</color>
+    <color name="verde_claro">#66FF33</color>
+    <color name="verde">#009900</color>
+    <color name="cinza_claro">#CCCCFF</color>
+    
+</resources>

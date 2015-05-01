@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/LinearLayout1"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/azul_claro"
+	android:orientation="vertical"
+	tools:context="${relativePackage}.${activityClass}" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/custumerborder"
+		android:orientation="vertical" >
+
+		<TextView
+			android:id="@+id/textView1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="25dp"
+			android:text="@string/texto_informa_idade"
+			android:textColor="#000000"
+			android:textSize="25sp" />
+
+		<TextView
+			android:id="@+id/textViewIdade"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="25dp"
+			android:text="@string/texto_sua_idade"
+			android:textColor="#0000FF"
+			android:textSize="40sp" />
+
+		<Button
+			android:id="@+id/btnReniciar"
+			android:layout_width="300dp"
+			android:layout_height="100dp"
+			android:layout_gravity="center"
+			android:layout_marginTop="10dp"
+			android:background="@color/verde"
+			android:text="@string/label_button_reiniciar"
+			android:textColor="@color/text_button"
+			android:textSize="25sp" />
+	</LinearLayout>
+
+</LinearLayout>

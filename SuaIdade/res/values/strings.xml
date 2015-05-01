@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Sua Idade</string>
+	<string name="title_activity_main">MainActivity</string>
+	<string name="texto_inicial">Olá! Essa aplicação tentará adivinhar sua idade.\nClique em Iniciar!\n</string>
+	<string name="texto_pergunta_idade">Sua idade consta na tabela abaixo?\nSIM ou NÃO!</string>
+	<string name="texto_informa_idade">Sua idade é:</string>
+	<string name="texto_sua_idade">0 ano(s)</string>
+	<string name="label_button_iniciar">Iniciar</string>
+	<string name="label_button_sim">SIM</string>
+	<string name="label_button_nao">NÃO</string>
+	<string name="label_button_voltar">Voltar</string>
+	<string name="title_activity_tabela1">Tabela 1</string>
+	<string name="title_activity_tabela2">Tabela 2</string>
+	<string name="title_activity_tabela3">Tabela 3</string>
+	<string name="title_activity_tabela4">Tabela 4</string>
+	<string name="title_activity_tabela5">Tabela 5</string>
+	<string name="title_activity_tabela6">Tabela 6</string>
+	<string name="texto_numero">00</string>
+	<string name="title_activity_resultado">Resultado</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="texto_nome_tabele">Tabela</string>
+	<string name="label_button_reiniciar">Reniciar</string>
+</resources>
