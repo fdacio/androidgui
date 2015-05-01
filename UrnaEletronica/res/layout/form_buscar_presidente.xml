@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+	<TextView
+	    android:id="@+id/text1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Nome" />
+
+   	<EditText
+   	    android:id="@+id/campoNome"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content" />
+
+	<TextView
+	    android:id="@+id/text2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Numero" />
+
+	<EditText
+	    android:id="@+id/campoNumero"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:numeric="integer"
+	    android:maxLength="5" />
+
+	<ImageButton
+	    android:id="@+id/btBuscar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="right"
+	    android:src="@drawable/pesquisar"
+	    android:text="Buscar" />
+
+	
+	<TextView
+	    android:id="@+id/text3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Partido" />
+
+	<EditText
+	    android:id="@+id/campoPartido"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" />
+
+	<TextView
+	    android:id="@+id/text32"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Nome do Vice" />
+
+	<EditText
+	    android:id="@+id/campoNomeVice"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" />
+	
+   	<TextView
+	    android:id="@+id/text4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Votos" 
+	    android:editable="false"/>
+
+   	<EditText
+   	    android:id="@+id/campoVotos"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:editable="false" />
+   		
+		
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Eleições 2014 - Pesquisa Interna</string>
+    <string name="texto_combo">Partidos</string>
+    <string name="nnew">Novo</string>
+    <string name="select">OK</string>
+    <string name="file_name">Nome do Arquivo</string>
+    <string name="cancel">Cancelar</string>
+    <string name="create">Criar</string>
+    <string name="no_data">Sem dados</string>
+    <string name="fd_path">Pasta Atual</string>
+    <string name="folder">Pasta</string>
+    <string name="fd_cant_read_folder">Erro ao ler a pasta</string>
+    <string name="title_file_dialog">Selecionar Arquivo/Diretório</string>
+    <string name="fd_error">Erro</string>
+
+    <color name="gray">#ffff0000</color>
+
+    <string name="title_activity_menu_configuracoes">MenuConfiguracoes</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
