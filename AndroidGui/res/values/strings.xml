@@ -46,5 +46,6 @@
 	<string name="action_about">Sobre</string>
 	<string name="action_version">Versão</string>
 	<string name="title_activity_game_flixel">Game Flixel</string>
+	<string name="title_activity_daily_advice_socket">DailyAdviceSocket</string>
 
 </resources>

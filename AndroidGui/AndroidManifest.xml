@@ -67,14 +67,6 @@
 			android:name=".MapaSimples2"
 			android:label="@string/title_activity_mapa_simples2" >
 		</activity>
-
-		<meta-data
-			android:name="com.google.android.maps.v2.API_KEY"
-			android:value="AIzaSyDVisiFW2VEZxz7ElkTpzifQK2wWWmu8Ig" />
-		<meta-data
-			android:name="com.google.android.gms.version"
-			android:value="@integer/google_play_services_version" />
-
 		<activity
 			android:name=".AnimacaoRasterizadaSimples"
 			android:label="@string/title_activity_animacao_rasterizada_simples" >
@@ -116,6 +108,17 @@
 			android:name=".GameFlixel"
 			android:label="@string/title_activity_game_flixel" >
 		</activity>
+		<activity
+			android:name=".DailyAdviceSocket"
+			android:label="@string/title_activity_daily_advice_socket" >
+		</activity>
+
+		<meta-data
+			android:name="com.google.android.maps.v2.API_KEY"
+			android:value="AIzaSyDVisiFW2VEZxz7ElkTpzifQK2wWWmu8Ig" />
+		<meta-data
+			android:name="com.google.android.gms.version"
+			android:value="@integer/google_play_services_version" />
 	</application>
 
 </manifest>
