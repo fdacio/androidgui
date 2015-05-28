@@ -47,5 +47,9 @@
 	<string name="action_version">Versão</string>
 	<string name="title_activity_game_flixel">Game Flixel</string>
 	<string name="title_activity_daily_advice_socket">DailyAdviceSocket</string>
+	<string name="server_ip">IP do Servidor:</string>
+	<string name="server_port">Porta do Servidor:</string>
+	<string name="get_advice">Ver um Conselho</string>
+	<string name="advice">Conselho</string>
 
 </resources>

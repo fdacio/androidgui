@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/LinearLayout1"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="br.com.daciosoftware.androidgui.DailyAdviceSocket" >
+
+    <TableLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" >
+
+    	<TableRow
+    		android:id="@+id/tableRow1"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" >
+
+    		<TextView
+    			android:id="@+id/textView1"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_gravity="center_vertical|end"
+    			android:text="@string/server_ip" />
+
+    		<EditText
+    			android:id="@+id/edtIpServer"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:inputType="text" 
+    			android:ems="8">
+
+    			<requestFocus />
+    		</EditText>
+
+    	</TableRow>
+
+    	<TableRow
+    		android:id="@+id/tableRow2"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" >
+
+    		<TextView
+    			android:id="@+id/textView2"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_gravity="center_vertical|end"
+    			android:text="@string/server_port" />
+
+    		<EditText
+    			android:id="@+id/edtPortServer"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+      			android:inputType="number"
+      			android:ems="8" />
+
+    	</TableRow>
+
+    	<TableRow
+    		android:id="@+id/tableRow3"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" >
+
+    	</TableRow>
+    </TableLayout>
+
+    <Button
+    	android:id="@+id/btnGetAdvice"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/get_advice" />
+
+    <TextView
+    	android:id="@+id/textViewAdvice"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_horizontal"
+    	android:text="@string/advice"
+    	android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>

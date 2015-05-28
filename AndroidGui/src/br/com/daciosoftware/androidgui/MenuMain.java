@@ -15,7 +15,7 @@ public class MenuMain extends ListActivity {
 	    "Cantos Arredondados", "Estrela RatinBar", "Visão Balançar",
 	    "Detecção de Gestos", "Animação Rasterizada", "Mapa", "Mapa2",
 	    "Processamento AsyncTask", "Fragments 1", "Fragments Dinâmico",
-	    "ActionBar","Sair" };
+	    "ActionBar","Advice - Socket","Sair" };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +61,10 @@ public class MenuMain extends ListActivity {
 	case 10:
 	    startActivity(new Intent(this, TelaActionBar.class));
 	    break;
+	case 11:
+	    startActivity(new Intent(this, DailyAdviceSocket.class));
+	    break;
+
 	default:
 	    finish();
 	}

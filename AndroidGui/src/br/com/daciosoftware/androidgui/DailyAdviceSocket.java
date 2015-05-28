@@ -1,16 +1,99 @@
 package br.com.daciosoftware.androidgui;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.InetAddress;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class DailyAdviceSocket extends ActionBarActivity {
+
+    private EditText edtIp;
+    private EditText edtPorta;
+    private TextView textViewAdvice;
+    private SharedPreferences sp;
+
+    private Socket socket;
+    private String ip;
+    private int porta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 	super.onCreate(savedInstanceState);
 	setContentView(R.layout.activity_daily_advice_socket);
+	ActionBar actionBar = getSupportActionBar();
+	actionBar.setDisplayHomeAsUpEnabled(true);
+
+	edtIp = (EditText) findViewById(R.id.edtIpServer);
+	edtPorta = (EditText) findViewById(R.id.edtPortServer);
+	textViewAdvice = (TextView) findViewById(R.id.textViewAdvice);
+	Button btnGetAdvice = (Button) findViewById(R.id.btnGetAdvice);
+
+	sp = getSharedPreferences("DAILE_ADVICE", MODE_PRIVATE);
+	edtIp.setText(sp.getString("IP", ""));
+	edtPorta.setText(sp.getString("PORTA", ""));
+
+	btnGetAdvice.setOnClickListener(new OnClickListener() {
+	    @Override
+	    public void onClick(View v) {
+
+		ip = edtIp.getText().toString();
+		porta = Integer.parseInt(edtPorta.getText().toString());
+
+		try {
+		    new Thread(new ClientThread()).start();
+
+		    InputStreamReader streamReader = new InputStreamReader(socket.getInputStream());
+		    BufferedReader reader = new BufferedReader(streamReader);
+		    String advice = reader.readLine();
+		    textViewAdvice.setText(advice);
+
+		} catch (UnknownHostException e1) {
+		    e1.printStackTrace();
+		} catch (IOException e1) {
+		    e1.printStackTrace();
+		} catch (Exception e) {
+		    e.printStackTrace();
+		}
+
+	    }
+	});
+
+    }
+
+    class ClientThread implements Runnable {
+
+	@Override
+	public void run() {
+	    try {
+		Log.e("ADVICE", ip + " " + porta);
+		InetAddress serverAddr = InetAddress.getByName(ip);
+		socket = new Socket(serverAddr, porta);
+
+	    } catch (UnknownHostException e1) {
+		e1.printStackTrace();
+	    } catch (IOException e1) {
+		e1.printStackTrace();
+	    } catch (Exception e) {
+		e.printStackTrace();
+	    }
+
+	}
+
     }
 
     @Override
