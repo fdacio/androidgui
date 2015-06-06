@@ -51,5 +51,17 @@
 	<string name="server_port">Porta do Servidor:</string>
 	<string name="get_advice">Ver um Conselho</string>
 	<string name="advice">Conselho</string>
+	<string name="btnGoMap">Apontar no Mapa</string>
+	<string name="app_info_drag">GestureDetector sample.\n\n
+								Currente Mode: SCROLL\n\n
+								Drag the view using finger.\n
+								Long press to change to mode FLIP.\n\n
+								Double tap to reposition the view to normal
+	</string>
+	<string name="app_info_flip">GestureDetector sample.\n\n
+								Currente Mode: FLIP\n\n
+								Swipe left, right, up, down to change the views.\n
+								Long press to change to mode SCROLL.
+	</string>
 
 </resources>

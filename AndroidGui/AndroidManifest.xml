@@ -5,7 +5,7 @@
 	android:versionName="1.0" >
 
 	<uses-sdk
-		android:minSdkVersion="10"
+		android:minSdkVersion="8"
 		android:targetSdkVersion="21" />
 
 	<permission
@@ -14,6 +14,7 @@
 
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 	<!--
@@ -102,7 +103,7 @@
 		<activity
 			android:name=".TelaActionBar"
 			android:label="@string/title_activity_action_bar"
-			android:theme="@style/Theme.AppCompat.Light" >
+			android:theme="@style/Theme.AppCompat" >
 		</activity>
 		<activity
 			android:name=".GameFlixel"
@@ -110,8 +111,7 @@
 		</activity>
 		<activity
 			android:name=".DailyAdviceSocket"
-			android:label="@string/title_activity_daily_advice_socket"
-			android:theme="@style/Theme.AppCompat.Light"  >
+			android:label="@string/title_activity_daily_advice_socket" >
 		</activity>
 
 		<meta-data

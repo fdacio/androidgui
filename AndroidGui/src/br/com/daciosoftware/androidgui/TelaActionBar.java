@@ -8,6 +8,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+@SuppressWarnings("deprecation")
 public class TelaActionBar extends ActionBarActivity {
 
     @Override
@@ -15,8 +16,8 @@ public class TelaActionBar extends ActionBarActivity {
 	super.onCreate(savedInstanceState);
 	setContentView(R.layout.activity_action_bar);
 	ActionBar actionBar = getSupportActionBar();
-	actionBar.setDisplayHomeAsUpEnabled(true);
-    }
+	actionBar.getDisplayOptions();
+   }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
