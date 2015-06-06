@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="horizontal"
+	android:padding="10dp" >
+
+	<TextView
+		android:id="@+id/textViewNomeLocal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="9.48"
+		android:text="@string/lbl_nome_local"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="end"
+		android:orientation="horizontal" >
+
+		<ImageButton
+			android:id="@+id/btnGoMap"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:clickable="true"
+			android:contentDescription="@string/text_ir_mapa"
+			android:focusable="true"
+			android:src="@drawable/ic_go_map" />
+
+		<ImageButton
+			android:id="@+id/btnEdit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:clickable="true"
+			android:contentDescription="@string/text_editar_local"
+			android:focusable="true"
+			android:src="@drawable/ic_edit" />
+
+		<ImageButton
+			android:id="@+id/btnDelete"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:clickable="true"
+			android:contentDescription="@string/text_deletar_local"
+			android:focusable="true"
+			android:src="@drawable/ic_delete" />
+	</LinearLayout>
+
+</LinearLayout>

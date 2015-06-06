@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Meu Mapa</string>
+	<string name="action_gravar_local">Gravar Local</string>
+	<string name="action_registrar_local">Registrar um Local</string>
+	<string name="action_listar_locais">Listar Locais</string>
+	<string name="action_search">Pesquisar</string>
+	<string name="action_reload">Recarregar</string>
+	<string name="action_sair">Sair</string>
+	<string name="action_save">Salvar</string>
+	<string name="action_cancel">Cancelar</string>
+	<string name="btn_gravar">Gravar</string>
+	<string name="btn_cancelar">Cancelar</string>
+	<string name="lbl_nome_local">Nome do Local</string>
+	<string name="lbl_latitude">Latitude</string>
+	<string name="lbl_longitude">Longitude</string>
+	<string name="text_editar_local">Editar Local</string>
+	<string name="text_deletar_local">Deletar Local</string>
+	<string name="text_ir_mapa">Apontar no Mapa</string>	
+	<string name="title_listar_locais">Locais Registrados</string>
+	<string name="title_editar_local">Editar Local</string>
+
+</resources>
