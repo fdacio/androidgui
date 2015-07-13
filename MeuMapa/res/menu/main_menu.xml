@@ -13,7 +13,7 @@
 	<item
 		android:id="@+id/action_registrar_local"
 		android:orderInCategory="101"
-		android:icon="@drawable/ic_plus"
+		android:icon="@drawable/ic_add"
 		android:title="@string/action_registrar_local"
 		app:showAsAction="ifRoom"/>
 	
