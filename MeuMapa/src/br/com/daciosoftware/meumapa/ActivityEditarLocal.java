@@ -48,7 +48,7 @@ public class ActivityEditarLocal extends ActionBarActivity {
 	    }
 	}
 	
-	getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+	//getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override

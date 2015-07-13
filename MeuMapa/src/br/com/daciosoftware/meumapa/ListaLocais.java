@@ -29,7 +29,7 @@ public class ListaLocais extends ActionBarActivity implements
     protected void onCreate(Bundle savedInstanceState) {
 	super.onCreate(savedInstanceState);
 	setContentView(R.layout.activity_lista_locais);
-	getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+	//getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 	setNomeLocal("");
 	atualizaLista();
     }

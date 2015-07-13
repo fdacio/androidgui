@@ -1,17 +1,17 @@
 package br.com.daciosoftware.meumapa;
 
-import android.annotation.TargetApi;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -24,9 +24,11 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-@SuppressWarnings("deprecation")
+@SuppressLint("NewApi")
 public class MainActivity extends ActionBarActivity implements LocationListener {
 
+    private Toolbar mToobar;
+    //private Toolbar mToobarBottom;
     private MapFragment mapFragment;
     private LocationManager locationManager;
     public GoogleMap mapa;
@@ -34,11 +36,16 @@ public class MainActivity extends ActionBarActivity implements LocationListener 
     
     public static final int EDITAR = 1; 
 
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+    @SuppressLint("NewApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 	super.onCreate(savedInstanceState);
 	setContentView(R.layout.activity_main);
+	
+	mToobar = (Toolbar) findViewById(R.id.tb_main);
+	mToobar.setTitle(R.string.app_name);
+	mToobar.setLogo(R.drawable.ic_launcher);
+	setSupportActionBar(mToobar);
 
 	/*
 	 * Inicializar o banco de dados SQLite
