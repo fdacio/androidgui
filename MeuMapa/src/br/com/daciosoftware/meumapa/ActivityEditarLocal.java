@@ -4,6 +4,7 @@ import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
@@ -14,9 +15,10 @@ import br.com.daciosoftware.meumapa.db.MeuMapaDatabase;
 @SuppressWarnings("deprecation")
 public class ActivityEditarLocal extends ActionBarActivity {
 
-    EditText edtLatitude;
-    EditText edtLongitude;
-    EditText edtNomeLocal;
+    private EditText edtLatitude;
+    private EditText edtLongitude;
+    private EditText edtNomeLocal;
+    private Toolbar toolbarEditLocal;
     
     private double latitude;
     private double longitude;
@@ -48,7 +50,10 @@ public class ActivityEditarLocal extends ActionBarActivity {
 	    }
 	}
 	
-	//getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+	toolbarEditLocal = (Toolbar) findViewById(R.id.tb_editar_local);
+	toolbarEditLocal.setTitle(R.string.title_editar_local);
+	setSupportActionBar(toolbarEditLocal);
+	getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
@@ -65,13 +70,15 @@ public class ActivityEditarLocal extends ActionBarActivity {
 	switch (id) {
 	case R.id.action_save:
 	    salvarLocal();
-	    
 	    return true;
 	case R.id.action_cancel:
 	    finish();
 	    return true;
+	case android.R.id.home:
+	    finish();
+	    return true;
 	}
-
+	
 	return super.onOptionsItemSelected(item);
     }
 

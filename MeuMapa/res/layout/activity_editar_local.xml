@@ -1,50 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/br.com.daciosoftware.meumapa"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:orientation="vertical" 
-	android:padding="10dp">
+	android:background="@color/backgroundColor"
+	android:orientation="vertical"
+	android:padding="10dp" >
 
-    <TextView
-    	android:id="@+id/textViewNomeLocal"
-    	android:layout_width="wrap_content"
-    	android:layout_height="wrap_content"
-    	android:text="@string/lbl_latitude" />
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/tb_editar_local"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:background="?attr/colorPrimary"
+		android:elevation="4dp"
+		android:minHeight="?attr/actionBarSize"
+		app:popupTheme="@style/Theme.AppCompat.Light" />
 
-    <EditText
-    	android:id="@+id/edtLatitude"
-    	android:layout_width="match_parent"
-    	android:layout_height="wrap_content"
-    	android:ems="10"
-    	android:inputType="numberDecimal|numberSigned" >
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical" 
+		android:layout_marginTop="10dp">
 
-    	<requestFocus />
-    </EditText>
+		<TextView
+			android:id="@+id/textViewNomeLocal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/lbl_latitude"
+			android:textColor="@color/labelColor" />
 
-    <TextView
-    	android:id="@+id/textView2"
-    	android:layout_width="wrap_content"
-    	android:layout_height="wrap_content"
-    	android:text="@string/lbl_longitude" />
+		<EditText
+			android:id="@+id/edtLatitude"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:inputType="numberDecimal|numberSigned"
+			android:textColor="@color/editColor" >
 
-    <EditText
-    	android:id="@+id/edtLongitude"
-    	android:layout_width="match_parent"
-    	android:layout_height="wrap_content"
-    	android:ems="10"
-    	android:inputType="numberDecimal|numberSigned" />
+			<requestFocus />
+		</EditText>
 
-    <TextView
-    	android:id="@+id/textView3"
-    	android:layout_width="wrap_content"
-    	android:layout_height="wrap_content"
-    	android:text="@string/lbl_nome_local" />
+		<TextView
+			android:id="@+id/textView2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/lbl_longitude"
+			android:textColor="@color/labelColor" />
 
-    <EditText
-    	android:id="@+id/edtNomeLocal"
-    	android:layout_width="match_parent"
-    	android:layout_height="wrap_content"
-    	android:ems="10"
-    	android:inputType="text" />
+		<EditText
+			android:id="@+id/edtLongitude"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:inputType="numberDecimal|numberSigned"
+			android:textColor="@color/editColor" />
+
+		<TextView
+			android:id="@+id/textView3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/lbl_nome_local"
+			android:textColor="@color/labelColor" />
+
+		<EditText
+			android:id="@+id/edtNomeLocal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:inputType="text"
+			android:textColor="@color/editColor" />
+	</LinearLayout>
 
 </LinearLayout>

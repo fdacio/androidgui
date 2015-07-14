@@ -3,7 +3,9 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="horizontal"
-	android:padding="10dp" >
+	android:padding="10dp"
+	android:layout_marginBottom="5dp"
+	android:background="@drawable/backgroud_linhas" >
 
 	<TextView
 		android:id="@+id/textViewNomeLocal"
@@ -11,7 +13,8 @@
 		android:layout_height="wrap_content"
 		android:layout_weight="9.48"
 		android:text="@string/lbl_nome_local"
-		android:textAppearance="?android:attr/textAppearanceLarge" />
+		android:textAppearance="?android:attr/textAppearanceLarge" 
+		android:textColor="@color/labelColor2"/>
 
 	<LinearLayout
 		android:layout_width="wrap_content"
@@ -23,31 +26,34 @@
 			android:id="@+id/btnGoMap"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_marginLeft="5dp"
 			android:clickable="true"
 			android:contentDescription="@string/text_ir_mapa"
 			android:focusable="true"
-			android:src="@drawable/ic_go_map" />
+			android:src="@drawable/ic_go_map"
+			android:background="@android:color/transparent" 
+			android:padding="10dp"/>
 
 		<ImageButton
 			android:id="@+id/btnEdit"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_marginLeft="5dp"
 			android:clickable="true"
 			android:contentDescription="@string/text_editar_local"
 			android:focusable="true"
-			android:src="@drawable/ic_edit" />
+			android:src="@drawable/ic_edit"
+			android:background="@android:color/transparent"
+			android:padding="10dp" />
 
 		<ImageButton
 			android:id="@+id/btnDelete"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_marginLeft="5dp"
 			android:clickable="true"
 			android:contentDescription="@string/text_deletar_local"
 			android:focusable="true"
-			android:src="@drawable/ic_delete" />
+			android:src="@drawable/ic_delete"
+			android:background="@android:color/transparent"
+			android:padding="10dp" />
 	</LinearLayout>
 
 </LinearLayout>

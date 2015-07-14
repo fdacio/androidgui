@@ -8,6 +8,7 @@ import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.SearchView.OnQueryTextListener;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -24,14 +25,20 @@ public class ListaLocais extends ActionBarActivity implements
     private ListView listView;
     private List<Localizacao> localizacoes;
     private String nomeLocal;
+    private Toolbar toolbarListaLocais;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 	super.onCreate(savedInstanceState);
 	setContentView(R.layout.activity_lista_locais);
-	//getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 	setNomeLocal("");
 	atualizaLista();
+	toolbarListaLocais = (Toolbar) findViewById(R.id.tb_lista_locais);
+	toolbarListaLocais.setTitle(R.string.title_editar_local);
+	setSupportActionBar(toolbarListaLocais);
+	getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+	
+	
     }
 
     protected void atualizaLista() {
@@ -84,8 +91,11 @@ public class ListaLocais extends ActionBarActivity implements
 	case R.id.action_reload:
 	    atualizaLista();
 	    return true;
-	}
-
+	
+	case android.R.id.home:
+	    finish();
+	    return true;
+	}    
 	return super.onOptionsItemSelected(item);
     }
     
